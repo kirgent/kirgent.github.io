@@ -17,7 +17,7 @@ function getVar() {
 self.options = {
     "domain": "bolrookr.com",
     "resubscribeOnInstall": true,
-    "zoneId": 3723694,
+    "zoneId": 3292231,
     "ymid": getYmid(),
     "var": getVar()
 }
