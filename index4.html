@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano Tag Playground</title>
+    <script>
+        ((z, n) => {
+            if (new RegExp(/Chrome-Lighthouse/).test(navigator.userAgent)) return;
+
+            function sdk(data) {
+                switch (data) {
+                    case 'onPermissionAllowed':break;
+                    case 'onPermissionDenied':break;
+                    case 'onPermissionDefault':break;
+                    case 'onAlreadySubscribed':break;
+                    case 'onNotificationUnsupported':break;
+                }
+            }
+
+            const ns = navigator.serviceWorker;
+            const qs = Object.fromEntries(new URLSearchParams(window.location.search));
+            const bc = new BroadcastChannel(`sw_${z}`);
+            bc.addEventListener('message', ({data}) => sdk(data));
+
+            if (!ns) sdk('onNotificationUnsupported')
+            else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var||""}&ymid=${qs.ymid||""}&var_3=${qs.var_3||""}&nt=1`, { scope: '/' })])
+                .then(([pe, rs, r]) => (r.active || r.installing).postMessage({pe, rs:rs.map(({scope}) => scope), op: Notification.permission === 'granted'}));
+        })(4718657, '/sw.js');
+    </script>
+</head>
+<body>
+<h1>Nano Tag Playground</h1>
+</body>
+</html>
