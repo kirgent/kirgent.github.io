@@ -28,7 +28,7 @@
         bc.addEventListener('message', ({data}) => sdk(data));
 
         if (!ns) sdk('onNotificationUnsupported')
-        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var||""}&ymid=${qs.ymid||""}&var_3=${qs.var_3||""}&nt=1`, { scope: '/' })])
+        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&cdn=1&domain=ouphouch.com&var=${qs.var||""}&ymid=${qs.ymid||""}&var_3=${qs.var_3||""}&nt=1`, { scope: '/' })])
             .then(([pe, rs, r]) => (r.active || r.installing).postMessage({pe, rs:rs.map(({scope}) => scope), op: Notification.permission === 'granted'}));
     })(4718657, '/sw.js');
 </script>
