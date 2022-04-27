@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detect quiet mode</title>
-    <script src="https://itweepinbelltor.com/pfe/current/tag.min.js?z=5005293&dcv=1" data-cfasync="false" async></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nano Tag Playground</title>
+
 </head>
 <body>
-<h1>Detect quiet mode</h1>
+<script>
+    ((z, n) => {
+        function sdk(data) {
+            switch (data) {
+                case 'onPermissionDefault':/* you code */ break;
+                case 'onPermissionAllowed':/* you code */ break;
+                case 'onPermissionDenied':/* you code */ break;
+                case 'onAlreadySubscribed':/* you code */break;
+                case 'onNotificationUnsupported':/* you code */break;
+            }
+        }
+
+        const ns = navigator.serviceWorker;
+        const qs = Object.fromEntries(new URLSearchParams(window.location.search));
+        const bc = new BroadcastChannel(`sw_${z}`);
+        const op = Notification.permission === 'granted';
+        bc.addEventListener('message', ({data}) => sdk(data));
+
+        if (!ns) sdk('onNotificationUnsupported')
+        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var||""}&ymid=${qs.ymid||""}&nt=1`, { scope: '/' })])
+            .then(([pe, rs, r]) => (r.active || r.installing).postMessage({pe, rs:rs.map(({scope}) => scope), op: op, nt: true}));
+    })(4718657, '/sw.js');
+</script>
+<h1>Nano Tag Playground</h1>
 </body>
 </html>
