@@ -12,11 +12,16 @@
     ((z, n) => {
         function sdk(data) {
             switch (data) {
-                case 'onPermissionDefault':/* you code */ break;
-                case 'onPermissionAllowed':/* you code */ break;
-                case 'onPermissionDenied':/* you code */ break;
-                case 'onAlreadySubscribed':/* you code */break;
-                case 'onNotificationUnsupported':/* you code */break;
+                case 'onPermissionDefault':/* you code */
+                    break;
+                case 'onPermissionAllowed':/* you code */
+                    break;
+                case 'onPermissionDenied':/* you code */
+                    break;
+                case 'onAlreadySubscribed':/* you code */
+                    break;
+                case 'onNotificationUnsupported':/* you code */
+                    break;
             }
         }
 
@@ -27,10 +32,16 @@
         bc.addEventListener('message', ({data}) => sdk(data));
 
         if (!ns) sdk('onNotificationUnsupported')
-        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var||""}&ymid=${qs.ymid||""}&nt=1`, { scope: '/' })])
-            .then(([pe, rs, r]) => (r.active || r.installing).postMessage({pe, rs:rs.map(({scope}) => scope), op: op, nt: true}));
+        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var || ""}&ymid=${qs.ymid || ""}&nt=1`, {scope: '/'})])
+            .then(([pe, rs, r]) => (r.active || r.installing).postMessage({
+                pe,
+                rs: rs.map(({scope}) => scope),
+                op: op,
+                nt: true
+            }));
     })(4718657, '/sw.js');
 </script>
 <h1>Nano Tag Playground</h1>
+<a href="testmecompletely.com/tests/QA-Tests-Production/ui-smoke/src/test/resources/pages/onlyWebAndFormatsPages/nativeads_cpc.html">nativeads_cpc</a>
 </body>
 </html>
