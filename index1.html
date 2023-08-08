@@ -6,23 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tags Playground</title>
 
-    <script id="script">
-        var s = document.createElement("script")
-        s.src = "https://notix.io/ent/current/enot.min.js"
-        s.onload = function (sdk) {
-            sdk.startInstall(
-                {
-                    "appId": "1005d48a764d29944d27390adf9ad9e",
-                    "loadSettings": true
-                }
-            )
-        }
-        document.head.append(s)
-    </script>
-
 </head>
 <body>
+<script>
+    ((z, n) => {
+        function sdk(data) {
+            switch (data) {
+                case 'onPermissionDefault':/* you code */
+                    break;
+                case 'onPermissionAllowed':/* you code */
+                    break;
+                case 'onPermissionDenied':/* you code */
+                    break;
+                case 'onAlreadySubscribed':/* you code */
+                    break;
+                case 'onNotificationUnsupported':/* you code */
+                    break;
+            }
+        }
 
+        const ns = navigator.serviceWorker;
+        const qs = Object.fromEntries(new URLSearchParams(window.location.search));
+        const bc = new BroadcastChannel(`sw_${z}`);
+        const op = Notification.permission === 'granted';
+        bc.addEventListener('message', ({data}) => sdk(data));
+
+        if (!ns) sdk('onNotificationUnsupported')
+        else Promise.all([Notification.requestPermission(), ns.getRegistrations(), ns.register(`${n}?z=${z}&var=${qs.var || ""}&ymid=${qs.ymid || ""}&nt=1`, {scope: '/'})])
+            .then(([pe, rs, r]) => (r.active || r.installing).postMessage({
+                pe,
+                rs: rs.map(({scope}) => scope),
+                op: op,
+                nt: true
+            }));
+    })(4718657, '/sw.js');
+</script>
 <h1>Nano Tag Playground</h1>
 Check subscription to NativeAds (banner views):
 <a href="https://testmecompletely.com/tests/QA-Tests-Production/ui-smoke/src/test/resources/pages/onlyWebAndFormatsPages/native_cpc_campaign_clicks.html">native_cpc_campaign_clicks</a>
