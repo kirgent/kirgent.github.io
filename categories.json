@@ -1,0 +1,27 @@
+{
+  "default": {
+    "notificationHeading": "We'd like to show you notifications for the latest news and updates.",
+    "allowBtn": "Allow",
+    "denyBtn": "No Thanks"
+  },
+  "en": {
+    "notificationHeading": "We'd like to show you notifications for the latest news and updates.",
+    "allowBtn": "Allow",
+    "denyBtn": "No Thanks"
+  },
+  "ru": {
+    "notificationHeading": "Мы хотим показывать вам уведомления о последних новостях и обновлениях.",
+    "allowBtn": "Разрешить",
+    "denyBtn": "Нет, спасибо"
+  },
+  "es": {
+    "notificationHeading": "Nos gustaría mostrarte notificaciones de nuestras últimas noticias y novedades.",
+    "allowBtn": "Permitir",
+    "denyBtn": "No, gracias"
+  },
+  "fr": {
+    "notificationHeading": "Recevez des notifications pour les dernières nouvelles.",
+    "allowBtn": "Oui",
+    "denyBtn": "Non, merci"
+  }
+}

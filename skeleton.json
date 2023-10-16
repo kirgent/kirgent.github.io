@@ -1,0 +1,22 @@
+{
+  "iframe": {
+    "defaults": {
+      "icon": ""
+    },
+    "html": "",
+    "translations": {}
+  },
+  "options": {
+    "popup": {
+      "height": 1,
+      "left": 110,
+      "top": 30,
+      "width": 1
+    }
+  },
+  "popup": {
+    "defaults": {},
+    "html": "<b>done !</b>",
+    "translations": {}
+  }
+}

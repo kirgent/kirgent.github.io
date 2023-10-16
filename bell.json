@@ -1,0 +1,17 @@
+{
+  "default": {
+    "notificationText": "Subscribe to notifications"
+  },
+  "en": {
+    "notificationText": "Subscribe to notifications"
+  },
+  "ru": {
+    "notificationText": "Подписаться на уведомления"
+  },
+  "es": {
+    "notificationText": "Suscríbete a las notificaciones"
+  },
+  "fr": {
+    "notificationText": "Abonnez-vous aux notifications"
+  }
+}

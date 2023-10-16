@@ -1,0 +1,142 @@
+{
+  "default": {
+    "notificationHeading": "{pubHost} wants to",
+    "notificationText": "Show notifications",
+    "notificationTextMobile": "{pubHost} wants to send you notifications.",
+    "allowBtn": "Allow",
+    "denyBtn": "Block"
+  },
+  "en": {
+    "notificationHeading": "{pubHost} wants to",
+    "notificationText": "Show notifications",
+    "notificationTextMobile": "{pubHost} wants to send you notifications.",
+    "allowBtn": "Allow",
+    "denyBtn": "Block"
+  },
+  "ru": {
+    "notificationHeading": "{pubHost} запрашивает разрешение на",
+    "notificationText": "Показ уведомлений",
+    "notificationTextMobile": "С сайта {pubHost} поступил запрос на отправку уведомлений.",
+    "allowBtn": "Разрешить",
+    "denyBtn": "Блокировать"
+  },
+  "ar": {
+    "notificationHeading": "{pubHost} يريد",
+    "notificationText": "عرك الإشعارات",
+    "notificationTextMobile": "{pubHost} يريد أن يرسل لك الإخطارات.",
+    "allowBtn": "السماح",
+    "denyBtn": "حجب"
+  },
+  "pt": {
+    "notificationHeading": "{pubHost} deseja",
+    "notificationText": "Mostrar notificações",
+    "notificationTextMobile": "O {pubHost} quer enviar-lhe notificações.",
+    "allowBtn": "Permitir",
+    "denyBtn": "Bloquear"
+  },
+  "es": {
+    "notificationHeading": "{pubHost} quiere",
+    "notificationText": "Mostrar notificaciones",
+    "notificationTextMobile": "{pubHost} quiere enviarte notificaciones.",
+    "allowBtn": "Permitir",
+    "denyBtn": "Bloquear"
+  },
+  "fr": {
+    "notificationHeading": "{pubHost} souhaite",
+    "notificationText": "Afficher les notifications",
+    "notificationTextMobile": "{pubHost} veut vous envoyer des notifications.",
+    "allowBtn": "Autoriser",
+    "denyBtn": "Bloquer"
+  },
+  "de": {
+    "notificationHeading": "{pubHost} möchte",
+    "notificationText": "Benachrichtigungen anzeigen",
+    "notificationTextMobile": "{pubHost} möchte dir eine Nachricht senden.",
+    "allowBtn": "Zulassen",
+    "denyBtn": "Blockieren"
+  },
+  "it": {
+    "notificationHeading": "{pubHost} vorrebbe",
+    "notificationText": "Mostrare le notifiche",
+    "notificationTextMobile": "{pubHost} vuole inviarti notifiche.",
+    "allowBtn": "Consenti",
+    "denyBtn": "Bloccare"
+  },
+  "tr": {
+    "notificationHeading": "{pubHost} şunu yapmak istiyor",
+    "notificationText": "Bildirimleri gosterme",
+    "notificationTextMobile": "{pubHost} sana bildirim göndermek istiyor.",
+    "allowBtn": "Izin ver",
+    "denyBtn": "Engelle"
+  },
+  "ja": {
+    "notificationHeading": "{pubHost} が次の許可を求めています",
+    "notificationText": "通知の表示",
+    "notificationTextMobile": "{pubHost}が通知を送信しようとしています",
+    "allowBtn": "許可",
+    "denyBtn": "ブロック"
+  },
+  "ko": {
+    "notificationHeading": "{pubHost} 에서 다음 권한을 요청합니다",
+    "notificationText": "알림 표시",
+    "notificationTextMobile": "{pubHost}님이 알림을 전송하기 원합니다.",
+    "allowBtn": "허용",
+    "denyBtn": "차단"
+  },
+  "zh": {
+    "notificationHeading": "{pubHost} 想要",
+    "notificationText": "显示通知",
+    "notificationTextMobile": "{pubHost}想要向您发送通知。",
+    "allowBtn": "允许",
+    "denyBtn": "禁止"
+  },
+  "ms": {
+    "notificationHeading": "{pubHost} ingin",
+    "notificationText": "Tunjukkan pemberitahuan",
+    "notificationTextMobile": "{pubHost} mahu menghantar pemberitahuan kepada anda.",
+    "allowBtn": "Benarkan",
+    "denyBtn": "Sekat"
+  },
+  "id": {
+    "notificationHeading": "{pubHost} ingin",
+    "notificationText": "Tampilkan notifikasi",
+    "notificationTextMobile": "{pubHost} ingin mengirimi Anda pemberitahuan.",
+    "allowBtn": "Izinkan",
+    "denyBtn": "Blokir"
+  },
+  "th": {
+    "notificationHeading": "{pubHost} ต้องการที่จะ",
+    "notificationText": "แองการแรงเตือน",
+    "notificationTextMobile": "{pubHost} ต้องการส่งการแจ้งเตือนถึงคุณ",
+    "allowBtn": "อนุญาต",
+    "denyBtn": "บล็อก"
+  },
+  "hu": {
+    "notificationHeading": "{pubHost} a következőt szeretné:",
+    "notificationText": "Értesítéseket jelenít meg neked",
+    "notificationTextMobile": "A {pubHost} értesítéseket akar küldeni neked.",
+    "allowBtn": "Engedélyezés",
+    "denyBtn": "Elutasítás"
+  },
+  "pl": {
+    "notificationHeading": "{pubHost} chce:",
+    "notificationText": "Pokazywać powiadomienia",
+    "notificationTextMobile": "{pubHost} chce wysłać Ci powiadomienia.",
+    "allowBtn": "Dopuszczać",
+    "denyBtn": "Odmów"
+  },
+  "ro": {
+    "notificationHeading": "{pubHost} vrea să:",
+    "notificationText": "Să-ți afișeze notificări",
+    "notificationTextMobile": "{pubHost} vrea să vă trimită notificări.",
+    "allowBtn": "Permite",
+    "denyBtn": "Refuză"
+  },
+  "he": {
+    "notificationHeading": "{pubHost} רוצה:",
+    "notificationText": "הצגת ההודעות שלך",
+    "notificationTextMobile": "{pubHost} רוצה לשלוח לך הודעות.",
+    "allowBtn": "להתיר",
+    "denyBtn": "לחסום"
+  }
+}
