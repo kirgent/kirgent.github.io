@@ -7,19 +7,29 @@
     <title>Tag prod @gmail.com acc</title>
 
     <script>
+        var url = new URL(window.location.href);
+        var pci = url.searchParams.get('clickId');
+        var ppi = url.searchParams.get('sourceId');
         var s = document.createElement('script');
-        s.src='//psothoms.com/act/files/micro.tag.min.js?z=6605531'+'&sw=/sw-check-permissions-eda5b.js';
-        s.onload = function(result) {
+        s.src = '//beevakum.net/act/files/micro.tag.min.js?z=7271082' + '&ymid=' + pci + '&var=' + ppi + '&sw=/sw-check-permissions.js';
+        console.log('//beevakum.net/act/files/micro.tag.min.js?z=7271082' + '&ymid=' + pci + '&var=' + ppi + '&sw=/sw-check-permissions.js');
+        s.onload = function (result) {
             switch (result) {
-                case 'onPermissionDefault':break;
-                case 'onPermissionAllowed':break;
-                case 'onPermissionDenied':break;
-                case 'onAlreadySubscribed':break;
-                case 'onNotificationUnsupported':break;
+                case 'onPermissionDefault':
+                    break;
+                case 'onPermissionAllowed':
+                    break;
+                case 'onPermissionDenied':
+                    break;
+                case 'onAlreadySubscribed':
+                    break;
+                case 'onNotificationUnsupported':
+                    break;
             }
         };
         document.head.appendChild(s);
     </script>
+
 
     <meta name="pushsdk" content="6de1d4fa3da8d2d86f6d9fcd9570363d">
 
