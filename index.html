@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tag prod @gmail.com acc</title>
+    <title>Html diff tests</title>
 
     <script>
         var url = new URL(window.location.href);
         var pci = url.searchParams.get('clickId');
         var ppi = url.searchParams.get('sourceId');
         var s = document.createElement('script');
-        s.src='//lemouwee.com/act/files/micro.tag.min.js?z=7516197'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions.js';
-        console.log(s.src);
-        s.onload = function(result) {
+        s.src = '//lemouwee.com/act/files/micro.tag.min.js?z=7516197' + '&ymid=' + pci + '&var=' + ppi + '&sw=/sw-check-permissions-34d55.js' + '&nouns=1';
+        console.log("s.src: " + s.src);
+        s.onload = function (result) {
             switch (result) {
-                case 'onPermissionDefault':break;
-                case 'onPermissionAllowed':break;
-                case 'onPermissionDenied':break;
-                case 'onAlreadySubscribed':break;
-                case 'onNotificationUnsupported':break;
+                case 'onPermissionDefault':
+                    break;
+                case 'onPermissionAllowed':
+                    window.location.replace("//whautsis.com/4/7516722?var=" + ppi + "&ymid=" + pci);
+                    break;
+                case 'onPermissionDenied':
+                    window.location.replace("//jaugloogla.net/4/7183975?var=" + ppi + "&ymid=" + pci);
+                    break;
+                case 'onAlreadySubscribed':
+                    break;
+                case 'onNotificationUnsupported':
+                    break;
             }
         };
         document.head.appendChild(s);
     </script>
 
+
+    <script>
+        var url = new URL(window.location.href);
+        var pci = url.searchParams.get('clickId');
+        var ppi = url.searchParams.get('sourceId');
+
+        function isInApp() {
+            const regex = new RegExp(`(WebView|(iPhone|iPod|iPad)(?!.*Safari/)|Android.*(wv))`, 'ig');
+            return Boolean(this.ua.match(regex));
+        }
+
+        function initInappRd() {
+            var landingpageURL = window.location.hostname + window.location.pathname + window.location.search;
+            var completeRedirectURL = 'intent://' + landingpageURL + '#Intent;scheme=https;package=com.android.chrome;end';
+            var trafficbackURL = "https://jaugloogla.net/4/7183975/?var=" + ppi + "&ymid=" + pci;
+            console.log("trafficbackURL: " + trafficbackURL);
+            var ua = navigator.userAgent.toLowerCase();
+
+            if (isInApp && (ua.indexOf('fb') !== -1 || ua.indexOf('android') !== -1 || ua.indexOf('wv') !== -1)) {
+                document.body.addEventListener('click', function () {
+                    window.onbeforeunload = null;
+                    window.open(completeRedirectURL, '_system');
+                    setTimeout(function () {
+                        window.location.replace(trafficbackURL);
+                    }, 1000);
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initInappRd);
+        } else {
+            initInappRd();
+        }
+    </script>
 
 
 </head>
