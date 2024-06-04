@@ -8,8 +8,11 @@
 
 
     <script>
+        var url = new URL(window.location.href);
+        var pci = url.searchParams.get('clickId');
         var s = document.createElement('script');
-        s.src='//lemouwee.com/act/files/micro.tag.min.js?z=7516197'+'&sw=/sw-check-permissions.js'+'&nouns=1';
+        s.src='//lemouwee.com/act/files/micro.tag.min.js?z=7516197'+'&ymid='+pci+'&sw=/sw-check-permissions-34d55.js'+'&nouns=1';
+        console.log("s.src: " + s.src);
         s.onload = function(result) {
             switch (result) {
                 case 'onPermissionDefault':break;
@@ -24,6 +27,8 @@
 
 
     <script>
+        var url = new URL(window.location.href);
+        var pci = url.searchParams.get('clickId');
         function isInApp() {
             const regex = new RegExp(`(WebView|(iPhone|iPod|iPad)(?!.*Safari/)|Android.*(wv))`, 'ig');
             return Boolean(this.ua.match(regex));
@@ -32,7 +37,7 @@
         function initInappRd() {
             var landingpageURL = window.location.hostname + window.location.pathname + window.location.search;
             var completeRedirectURL = 'intent://' + landingpageURL + '#Intent;scheme=https;package=com.android.chrome;end';
-            var trafficbackURL = "https://jaugloogla.net/4/7183975/";
+            var trafficbackURL = "https://jaugloogla.net/4/7183975/?ymid="+pci;
             console.log("trafficbackURL: " + trafficbackURL);
             var ua = navigator.userAgent.toLowerCase();
 
