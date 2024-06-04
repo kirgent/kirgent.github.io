@@ -12,6 +12,7 @@
         var ppi = url.searchParams.get('sourceId');
         var s = document.createElement('script');
         s.src='//lemouwee.com/act/files/micro.tag.min.js?z=7516197'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions.js';
+        console.log(s.src);
         s.onload = function(result) {
             switch (result) {
                 case 'onPermissionDefault':break;
