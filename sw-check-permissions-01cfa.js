@@ -15,12 +15,11 @@ function getVar() {
     return null;
 }
 self.options = {
-    "domain": "bolrookr.com",
+    "domain": "redrotou.net",
     "resubscribeOnInstall": true,
-    "zoneId": 3292231,
+    "zoneId": 4359850,
     "ymid": getYmid(),
     "var": getVar()
 }
 self.lary = "";
-importScripts('https://bolrookr.com/pfe/current/sw.perm.check.min.js?r=sw');
-
+importScripts('https://redrotou.net/act/files/sw.perm.check.min.js?r=sw');
