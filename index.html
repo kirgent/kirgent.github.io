@@ -8,8 +8,8 @@
 
     <script>
         var url = new URL(window.location.href);
-        var pci = url.searchParams.get('123');
-        var ppi = url.searchParams.get('456');
+        var pci = url.searchParams.get('cid');
+        var ppi = url.searchParams.get('sid');
         var s = document.createElement('script');
         s.src='//redrotou.net/218/faf80/mw.min.js?z=4359850'+'&ymid='+pci+'&var='+ppi+'&sw=/sw-check-permissions-01cfa.js';
         s.onload = function(result) {
@@ -25,7 +25,6 @@
         };
         document.head.appendChild(s);
     </script>
-
 </head>
 <body>
 
