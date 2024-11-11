@@ -15,11 +15,11 @@ function getVar() {
     return null;
 }
 self.options = {
-    "domain": "desekansr.com",
+    "domain": "deefauph.com",
     "resubscribeOnInstall": true,
-    "zoneId": 7682088,
+    "zoneId": 8487615,
     "ymid": getYmid(),
     "var": getVar()
 }
 self.lary = "";
-importScripts('https://desekansr.com/act/files/sw.perm.check.min.js?r=sw');
+importScripts('https://deefauph.com/act/files/sw.perm.check.min.js?r=sw');
