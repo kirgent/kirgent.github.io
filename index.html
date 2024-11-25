@@ -14,27 +14,7 @@
     <script async src="https://desenteir.com/58c/74ea4/reverse.min.js?sf=1"></script>
 
 
-    <script>
-        (function () {
-            var clickUrl = "https://toopsoug.net/4/8487613?var={your_source_id}";
-
-            function clickTbEventInit() {
-                document.addEventListener('click', function () {
-                    window.onbeforeunload = null;
-                    window.open(clickUrl, '_blank', 'noreferrer,noopener');
-                });
-            }
-
-            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && !('ontouchstart' in window)) {
-                setTimeout(function () {
-                    clickTbEventInit();
-                }, 5000);
-            }
-        })();
-    </script>
-
-
-    <script>
+   <script>
         var url = new URL(window.location.href);
         var pci = url.searchParams.get('clickId');
         var ppi = url.searchParams.get('sourceId');
